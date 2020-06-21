@@ -50,7 +50,9 @@ int main() {
     }
 
 
-
+  //analytisch
+  double Ja = M*pow(ZM_R,2)+M*a.betrag()*a.betrag();
+  double Ia = 0.5*M*pow(ZM_R,2)+M*a.betrag()*a.betrag();
 
 
 
@@ -58,6 +60,7 @@ int main() {
             << " mit a = " << a << " und u = " << u << ": " << J << std::endl;
   std::cout << "Massentraegheitsmoment fuer einen Vollzylinder"
             << " mit a = " << a << " und u = " << u << ": " << I << std::endl;
+  std::cout << "Analytisch:" << " I_m = " << Ja << " I_v = " << Ia << std::endl; 
 
             
   return 0;
