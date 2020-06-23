@@ -3,9 +3,10 @@
 #include <cmath>
 #include <cstdlib>
 
-Vollzylinder::Vollzylinder(double nr, double nl) {
+Vollzylinder::Vollzylinder(double nr, double nl, double nm) {
   r_ = nr;
   l_ = nl;
+  m_ = nm;
 }
 
 Vektor Vollzylinder::punkt() {
