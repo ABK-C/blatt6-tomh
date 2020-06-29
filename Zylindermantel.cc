@@ -3,9 +3,10 @@
 #include <cmath>
 #include <cstdlib>
 
-Zylindermantel::Zylindermantel(double nr, double nl) {
+Zylindermantel::Zylindermantel(double nr, double nl, double nm) {
   r_ = nr;
   l_ = nl;
+  m_ = nm;
 }
 
 Vektor Zylindermantel::punkt() {
@@ -14,6 +15,8 @@ Vektor Zylindermantel::punkt() {
   double z = l_ * (rand() / (double)RAND_MAX - 0.5);
 
   double x = 0;
+  x = R * cos(phi);
   double y = 0;
+  y = R * sin(phi);
   return Vektor(x, y, z);
 };
